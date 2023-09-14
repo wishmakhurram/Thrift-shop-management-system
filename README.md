@@ -1,0 +1,1 @@
+# Thrift-shop-management-system
