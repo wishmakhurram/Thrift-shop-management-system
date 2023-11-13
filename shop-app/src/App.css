@@ -1,0 +1,447 @@
+/* Login Page */
+.login-container{
+  background: linear-gradient(30deg, #e8f3f6c5 40%, #0D6EFD 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-content{
+  background-color: #ffffff;
+  width: 25%;
+  height: 70%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 30px 0px rgba(110, 110, 110, 0.8);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(142, 141, 141, 0.8);
+-moz-box-shadow: 0px 0px 30px 0px rgba(139, 138, 138, 0.8);
+transform: scale3d(1.1);
+}
+@media(max-width: 1200px){
+  .login-content{
+    width: 25%;
+    height: 80vh;
+
+  }
+}
+@media(max-width: 1065px){
+  .login-content{
+    width: 35%;
+
+  }
+}
+@media(max-width: 765px){
+  .login-content{
+    width: 45%;
+
+  }
+}
+@media(max-width: 595px){
+  .login-content{
+    width: 50%;
+
+  }
+}
+@media(max-width: 550px){
+  .login-content{
+    width: 70%;
+  }
+}
+@media(max-width: 450px){
+  .login-content{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .login-content > h1{
+    margin-top: 60px !important;
+  }
+  .form-group{
+    margin-top: 20px !important;
+  }
+  .form-control{
+    height: 45px !important;
+  }
+  .btn-login{
+    margin-top: 40px !important;
+  }
+  .signinWith{
+    margin: 20px 0 !important;
+  }
+  .createAccount{
+    margin-top: 50px !important;
+  }
+  .password-toggle-icon{
+    top: 38px !important;
+  }
+  .input-group-text{
+    font-size: 23.5px !important;
+  }
+  .already{
+    margin-top: 20px !important;
+  }
+  .signupTag{
+    font-size: 32px !important;
+  }
+}
+.form-group{
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.form-control{
+  border-radius: 0 5px 5px 0 !important;
+}
+.input-group-text{
+  background-color: #0D6EFD;
+  color: #fff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px; 
+}
+.password-toggle-icon{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.btn-login{
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+.btn-google{
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: #d6d9d9;
+  color: #464444;
+  border: none;
+}
+.btn-google:hover{
+  background-color: rgb(188, 190, 191);
+  color: #171717;
+  
+}
+.signupTag{
+  font-size: 36px;
+}
+
+/* Navbar */
+
+.nav-container{
+  width: 100%;
+}
+.nav-content{
+  display: flex;
+  flex-direction: column;
+}
+.nav-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 13px;
+  /* background-color: #f9f3d5; */
+  border-bottom: 2px solid #e6e5e5;
+}
+.nav-header > div{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.nav-header > div p{
+  margin: 0;
+}
+.nav-header .nav-header-items{
+  margin-left: 25px;
+}
+.nav-header-items > a{
+  color: #000;
+  text-decoration: none;
+}
+.nav-header-freeLine{
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 60px !important;
+}
+.search-bar{
+  justify-content: center;
+  padding: 5px 10px;
+  border: none;
+  font-size: 12px;
+  border-bottom: 2px solid #e6e5e5;
+  border-radius: 25px;
+}
+
+/* Language Selector */
+.language-selector-container,.currency-selector-container {
+  position: relative;
+}
+
+.nav-header-items {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.selected-language,.selected-currency {
+  margin-right: 8px;
+}
+
+.language-options,.currency-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ccc;
+  background: white;
+  z-index: 1;
+  padding: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.language-options p,.currency-options p {
+  margin: 0;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.language-options p:hover,.currency-options p:hover {
+  background: #f5f5f5;
+}
+
+
+/* Add your existing styles here */
+
+.account-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offcanvas-title {
+  color: #007bff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.user-actions {
+  margin-top: 20px;
+}
+
+.user-actions a {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.user-actions a:hover {
+  color: #007bff;
+}
+
+.action-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.nav-body-functions .nav-functions:hover{
+  color:#007bff;
+}
+.nav-account{
+  color: #000;
+  text-decoration: none;
+}
+
+.row-border {
+  border: 1px solid lightgray;
+}
+/* Add any additional styles as needed */
+
+
+.nav-icons{
+  font-size: 15px;
+}
+.nav-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 2px solid #e6e5e5;
+
+}
+.nav-body .nav-body-tabs > a{
+  text-transform: capitalize;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.nav-body .nav-body-logo > a{
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-body .nav-body-functions>a{
+  text-decoration: none;
+  margin-left: 25px;
+  color: #000;
+  font-size: 12px;
+}
+.nav-body-functions-icons{
+  font-size: 20px;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/khyay.css);
+@import url('https://fonts.googleapis.com/css2?family=Titan+One:wght@400;600;700&display=swap');
+/* Carousel */
+.carouselCaption{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-left: -180px;
+  margin-top: -38%;
+}
+.newArrival{
+  font-size:24px;
+  font-weight:700;
+  color:#000;
+  font-family: 'Khyay', sans-serif;
+  text-transform: uppercase;
+}
+.autumn{
+  font-size:48px;
+  font-weight:1000;
+  width:100px;
+  line-height:45px;
+  color:#000;
+  text-transform: uppercase;
+
+  font-family: 'Titan', sans-serif;
+}
+.shopnow{
+  width:150px;
+  font-weight:800;
+  font-size:14px;
+  padding:10px;
+  color:#fff;
+  background-color:#000;
+  border-radius:5px;
+  text-transform: uppercase;
+  border: none;
+  z-index: 1000 !important;
+}
+.shopnow:hover,.shopnow1:hover{
+  background-color:#007bff;
+  color:rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+}
+.shopnow1{
+  width:150px;
+  font-weight:800;
+  font-size:14px;
+  padding:10px;
+  color:#000;
+  background-color:#ffffff;
+  border-radius:5px;
+  text-transform: uppercase;
+  border: none;
+  z-index: 1000 !important;
+}
+.newArrival1{
+  font-size:24px;
+  font-weight:700;
+  color:#ffffff;
+  font-family: 'Khyay', sans-serif;
+  text-transform: uppercase;
+}
+.autumn1{
+  font-size:48px;
+  font-weight:1000;
+  width:100px;
+  line-height:45px;
+  color:#ffffff;
+  text-transform: uppercase;
+
+  font-family: 'Titan', sans-serif;
+}
+/* Delivery */
+
+.deliver{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 60px;
+
+}
+.deliver > div{
+  display: flex;
+  flex-direction: row;
+  margin: auto 20px;
+}
+.deliver > div img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.deliver > div img:hover {
+  animation: moveLeftRight 0.3s infinite alternate;
+  cursor: pointer; /* Apply the animation on hover */
+}
+
+@keyframes moveLeftRight {
+  to {
+    transform: translateX(3px); /* Move the image 3 pixels to the right */
+  }
+}
+.deliver > div p > span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+.custom-chevron {
+  position: absolute;
+  top: 52%;
+  /* transform: translateY(-50%); */
+  right: 0;
+  left: 1397.9px !important;
+  /* font-size: 2rem; Adjust the font size as needed */
+  /* color: #000; Adjust the color as needed */
+}
+
+
+.carousel-image{
+  width: 100%;
+  height: 100vh !important;
+  object-fit:cover;
+  object-position: top;
+}
