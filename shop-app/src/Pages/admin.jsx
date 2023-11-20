@@ -1,6 +1,11 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa';
-import {BiHome} from 'react-icons/bi';
+import {BiHome,BiSolidDashboard} from 'react-icons/bi';
+import { MdContacts } from "react-icons/md";
+import { HiTemplate } from "react-icons/hi";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
+import { TbReorder } from "react-icons/tb";
+import { GrUser } from "react-icons/gr";
 
 const Admin = () => {
   return (
@@ -17,11 +22,12 @@ const Admin = () => {
             <p>Smart Admin</p>
           </div>
           <div>
-            <a href="#"><BiHome/> Dashboard</a>
-            <p>Data</p>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#"><BiSolidDashboard/> Dashboard</a>
+            <a href="#"><MdContacts/> Contact Information</a>
+            <a href="#"><HiTemplate/> View Products</a>
+            <a href="#"><MdOutlineProductionQuantityLimits/> Add Products</a>
+            <a href="#"><TbReorder/> View Orders</a>
+            <a href="#"><GrUser/> View Customers</a>
           </div>
         </div>
         <div className='admin-dash'>
