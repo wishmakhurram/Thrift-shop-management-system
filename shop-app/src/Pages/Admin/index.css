@@ -1,0 +1,42 @@
+.table-div{
+    overflow-x: auto;
+}
+/* AddProducts.css */
+.custom-input {
+    margin-bottom: 15px;
+  }
+  
+  .custom-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .custom-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049;
+  }
+/* .custom-input {
+    margin-bottom: 10px;
+  }
+  
+  .custom-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: #fff;
+  } */
+  
+  /* Add more styles as needed */
+  

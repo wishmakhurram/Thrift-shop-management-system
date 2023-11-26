@@ -3,7 +3,6 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiTwotoneDownCircle } from "react-icons/ai";
 
 function CarouselPage() {
-
   return (
     <Carousel prevIcon={<AiTwotoneDownCircle className="custom-chevron" />}
     nextIcon={<AiTwotoneDownCircle />} style={{ height: '700px' }}>

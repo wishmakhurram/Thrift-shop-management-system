@@ -37,12 +37,12 @@ const Navbar = () => {
             <div>
               <p className="nav-header-items">
                 <BiSolidPhoneCall className="nav-icons" />
-                <a href="https://wa.me/923254744800">+92-325-4744-800</a>
+                <a href="https://wa.me/923254744800" style={{marginLeft:'2px'}}>+92-325-4744-800</a>
               </p>
 
               <p className="nav-header-items" style={{textTransform:'lowercase'}}>
                 <MdEmail className="nav-icons" />
-                <a href="mailto:uzairakhtar100@gmail.com">
+                <a href="mailto:uzairakhtar100@gmail.com" style={{marginLeft:'2px'}}>
                   uzairakhtar100@gmail.com
                 </a>
               </p>
@@ -53,8 +53,8 @@ const Navbar = () => {
               </p>
             </div>
             <div>
-              <p className="nav-header-items">
-                <FaLocationDot className="nav-icons" /> Q hall UET Lahore,
+              <p className="nav-header-items" >
+                <FaLocationDot className="nav-icons" style={{marginRight:'2px'}} /> Q hall UET Lahore,
                 Punjab 23520
               </p>
              <LanguageSelector/>
