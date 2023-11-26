@@ -63,9 +63,9 @@ const Navbar = () => {
           </div>
           <div className="nav-body">
             <div className="nav-body-tabs">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
               <a href="#">Collections</a>
-              <a href="#">Products</a>
+              <a href="/all-products">Products</a>
               <a href="#">Other Pages</a>
             </div>
             <div className="nav-body-logo">
