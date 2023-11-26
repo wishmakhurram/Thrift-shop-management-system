@@ -13,7 +13,7 @@ function Home() {
       <Navbar/>
       <CarouselPage/>
       <Delivery/>
-      <Card/>
+      <Card limit='4' />
       <MultiCard/>
       <TrandingOutfit/>
       <Footer/>
