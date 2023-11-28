@@ -11,7 +11,7 @@ async function loginUser(req, res, next) {
     return res.status(200).json({
       message: "Logged in successfully",
       email: email,
-      fullname: user.fullname,
+      username: user.username,
       userid: user.id,
       token: token,
     });

@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 
 mongoose.userSchema = new mongoose.Schema({
     username: String,
-    role: { type: String, enum: ["superadmin", "admin", "user"] ,default:'user'},
-    email: String,
+    email: { type: String, unique: true, required: true },
     password:String,
+    isAdmin:{
+        type:Boolean,
+        default:false
+    },
     is_varified: Boolean,
 
 },
