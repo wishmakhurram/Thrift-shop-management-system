@@ -1,0 +1,32 @@
+.profile-content{
+    width: 600px !important;
+}
+@media(max-width:632px){
+    .profile-content{
+        width: 500px !important;
+    }
+}
+@media(max-width:532px){
+    .profile-content{
+        width: 450px !important;
+    }
+}
+@media(max-width:482px){
+    .profile-content{
+        width: 400px !important;
+    }
+}
+@media(max-width:430px){
+    .profile-content{
+        width: 350px !important;
+    }
+}
+@media(max-width:380px){
+    .profile-content{
+        width: 100% !important;
+        overflow-x: auto !important;
+    }
+    .profile-txt{
+        font-size: 20px !important;
+    }
+}
